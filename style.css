@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 }
@@ -29,13 +29,27 @@ main {
 nav > ul > li {
     list-style: none;
     display: inline;
+    text-decoration: none;
+}
+
+nav > ul > li > a, nav > ul > li > span {
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-left: 1px white solid;
+}
+
+nav > ul > li > span {
+    border-left: none;
 }
 
 nav > ul > li > a {
-    color: white;
-    font-size: 14px;
-    padding: 0px 10px 0px;
-    border-left: 1px white solid;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+nav > ul > li > span > a {
+    color: red;
 }
 
 a:hover {
