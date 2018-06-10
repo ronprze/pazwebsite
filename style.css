@@ -1,9 +1,18 @@
+* {
+    margin: 0;
+}
+
 body {
     direction: rtl;
     font-family: 'Arial (Hebrew)', Arial;
-    margin: 0 auto;
-    padding: 0;
-    width: 900px;
+}
+
+main {
+
+}
+
+nav > ul > li {
+    list-style: none;
 }
 
 .div-footer {
@@ -11,5 +20,10 @@ body {
     height: 38px;
     position: fixed;
     bottom: 0;
+    background-color: gray;
+}
 
+.div-footer > nav > ul > li {
+    width: 900px;
+    margin: 15px auto;
 }
