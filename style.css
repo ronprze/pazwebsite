@@ -14,12 +14,46 @@ header, footer {
     background-color: gray;
 }
 
+main, header > nav, footer > nav {
+    width: 900px;
+}
+
 main {
     margin: 0 auto;
 }
 
-main, header > nav, footer > nav {
-    width: 900px;
+.container {
+    float: right;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 30px;
+    background-image: url("IMAGES/1908364606615453350.JPG");
+    width: 292px;
+    height: 354px;
+    border-bottom-right-radius: 30px;
+}
+
+.container:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.subtext {
+    position: absolute;
+    left: 38px;
+    bottom: 6px;
+    width: 228px;
+    background-color: rgba(175, 175, 175, 0.8);
+    color: white;
+    padding: 5px;
+     margin-bottom: 10px;
+    font-size: 13px;
+    border-bottom-right-radius: 15px;
+}
+
+.subtext > a > span {
+    margin-right: 173px;
 }
 
 footer {
