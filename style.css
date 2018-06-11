@@ -114,8 +114,14 @@ header > div, main, .bottom-container > img, .bottom-container > div {
     border-bottom-right-radius: 15px;
 }
 
+.subtext > p {
+    width: 228px;
+    height: 52px;
+}
+
 .subtext > a > span {
-    margin-right: 173px;
+    margin-top: 20px;
+    margin-right: 180px;
 }
 
 .bottom-container {
@@ -159,7 +165,21 @@ header > div, main, .bottom-container > img, .bottom-container > div {
     list-style: none;
 }
 
+.bottom-container-last-child {
+    position: relative;
+}
 
+.right-side {
+    font-size: 13px;
+    color: #72716d;
+    margin-right: 21px;
+}
+
+#ilImage {
+    position: absolute;
+    top: -10px;
+    left: 21px;
+}
 
 .bottom-container::after {
     content: "";
