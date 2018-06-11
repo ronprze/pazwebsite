@@ -11,7 +11,7 @@ body {
 
 header, footer {
     width: 100%;
-    background-color: gray;
+    background-color: #909090;
 }
 
 header {
@@ -38,7 +38,7 @@ header > div, main, .bottom-container > img, .bottom-container > div {
     font-weight: bold;
     color: white;
     text-decoration: none;
-    padding-left: 15px;
+    padding-left: 2px;
     margin: 0;
 }
 
@@ -46,36 +46,67 @@ header > div, main, .bottom-container > img, .bottom-container > div {
     width: 126px;
     border: 0 none;
     border-top-right-radius: 6px;
-    margin-left: 21px;
+    margin-left: 2px;
     text-align: right;
 }
 
 .search-box > a > img {
+    float: left;
+}
+
+.search-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    /* main menu code */
+.anchor-menu {
     position: absolute;
 }
 
-.dropdown > ul {
+header > div.top-container > nav > ul {
     list-style: none;
+    margin-right: 120px;
+    margin-top: 40px;
 }
 
-.dropdown > ul > li {
-    display: inline;
+header > div.top-container > nav > ul > li {
+    display: inline-block;
     margin: 0;
+    padding: 0 10px;
+    border-left: 1px solid #aaaaaa;
 }
 
-.dropdown > ul > li > a, .dropdown-content > a {
+header > div.top-container > nav > ul > li > a, .dropdown-content > a {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
     color: white;
-    padding: 15px;
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-content {
-    /* position: absolute; */
+    position: absolute;
+    background-color: #909090;
+    top: 20px;
+    display: none;
     z-index: 3;
 }
 
+.dropdown-content > a {
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-content > a {
+    display: block;
+}
+
+.dropdown-content:hover > .dropdown-content {
+    display: block;
+}
 
 /* Main Div and Content */
 .container {
@@ -127,7 +158,7 @@ header > div, main, .bottom-container > img, .bottom-container > div {
 .bottom-container {
     float: right;
     margin-top: 15px;
-    width: 291px;
+    width: 290px;
     height: 216px;
     background-color: #eeeeee;
     border-top-right-radius: 20px;
