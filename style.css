@@ -44,7 +44,7 @@ main {
     left: 38px;
     bottom: 6px;
     width: 228px;
-    background-color: rgba(175, 175, 175, 0.8);
+    background-color: rgba(36, 36, 36, 0.8);
     color: white;
     padding: 5px;
      margin-bottom: 10px;
@@ -54,6 +54,22 @@ main {
 
 .subtext > a > span {
     margin-right: 173px;
+}
+
+/*
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.bottom-container {
+    float: right;
+    margin-top: 30px;
+    width: 292px;
+    height: 216px;
+    border-top-right-radius: 20px;
+    border: 1px solid black;
 }
 
 footer {
