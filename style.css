@@ -18,7 +18,7 @@ main, header > nav, footer > nav {
     width: 900px;
 }
 
-main {
+main, .bottom-container > img, .bottom-container > div {
     margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@ main {
 }
 
 /*
-.container::after {
+.bottom-container::after {
     content: "";
     display: table;
     clear: both;
@@ -65,11 +65,38 @@ main {
 
 .bottom-container {
     float: right;
-    margin-top: 30px;
-    width: 292px;
+    margin-top: 15px;
+    width: 291px;
     height: 216px;
     border-top-right-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid rgba(58, 58, 58, 0.644);
+    margin-bottom: 60px;
+}
+
+.bottom-container > div {
+    width: 250px;
+    height: 34px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.644);
+}
+
+.bottom-container > div > h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    color: rgba(58, 58, 58, 0.644);
+}
+
+.bottom-container > img {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.bottom-container > span > a {
+    font-size: 13px;
+    color: #72716d;
+    margin-right: 188px;
 }
 
 footer {
