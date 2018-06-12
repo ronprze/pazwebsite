@@ -6,7 +6,7 @@
 
 body {
     direction: rtl;
-    font-family: 'Arial (Hebrew)', Arial;
+    font-family: 'Arial (Hebrew)', Arial, sans-serif;
 }
 
 header, footer {
@@ -216,7 +216,7 @@ header > div.top-container > nav > ul > li > a, .dropdown-content > a {
     content: "";
     display: table;
     clear: both;
-} 
+}
 
 /* Footer Design */
 footer {
