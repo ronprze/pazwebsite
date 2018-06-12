@@ -8,8 +8,9 @@ body {
     padding-right: 10px;
 }
 
-.right-column, .main {
+.right-column, .center-column, .left-column {
     margin-top: 30px;
+    float: right;
 }
 
 .right-column > ul > li {
@@ -32,11 +33,7 @@ a:hover, ul > li > a > span:hover {
     text-decoration: underline;
 }
 
-.main {
-    width: 776px;
-}
-
-.main-center {
+.center-column {
     width: 440px;
 }
 
@@ -89,4 +86,10 @@ h3 {
 .header {
     width: 248px;
     border-bottom: 1px solid #dfdfdf;
+}
+
+.box::after {
+    content: "";
+    clear: both;
+    display: table;
 }
