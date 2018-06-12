@@ -73,7 +73,9 @@ label {
     color: #6d6d6d;
     display: inline-block;
     text-align: right;
+    height: 23px;
     font-size: 12px;
+    padding-top: 2px;
 }
 
 .col-75, .col-25 {
@@ -90,24 +92,42 @@ label {
     float: left;
 }
 
-.col-75::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 textarea {
     color: #6d6d6d;
     width: 237px;
     height: 100px;
     padding: 3px;
     border: 1px solid #808992;
+    margin-bottom: 5px;
 }
 
-input[type="text"], input[type="email"] {
-    width: 160px;
+form > input[type="text"], form > input[type="email"] {
+    width: 155px;
     padding: 3px;
     border: 1px solid #808992;
+}
+
+form > input[type="submit"] {
+    float: left;
+    background-color: #02528a;
+    border: 1px solid #3c3c3c;
+    border-top-right-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 0 2px 0;
+    cursor: pointer;
+}
+
+form > input[type="submit"]:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+    color: #3c3c3c;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .box {
