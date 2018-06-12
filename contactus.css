@@ -23,12 +23,12 @@ body {
     color: #72716d;
 }
 
-.right-column > ul > li > a > img {
+.right-column > ul > li > img {
     margin-top: 5px;
     vertical-align: text-bottom;
 }
 
-a:hover, ul > li > a > span:hover {
+a:hover, ul > li > a:hover {
     color: #005CA0 !important;
     text-decoration: underline;
 }
@@ -45,7 +45,7 @@ a:hover, ul > li > a > span:hover {
 
 .main-form {
     width: 346px;
-    height: 331px;
+    height: 344px;
     padding: 12px 18px;
     margin: 0 10px 20px;
 }
@@ -65,9 +65,49 @@ a:hover, ul > li > a > span:hover {
 
 form {
     width: 245px;
-    height: 220px;
     margin: 10px auto;
     display: block;
+}
+
+label {
+    color: #6d6d6d;
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+}
+
+.col-75, .col-25 {
+    margin-bottom: 5px;
+}
+
+.col-25 {
+    width: 25%;
+    float: right;
+}
+
+.col-75 {
+    width: 75%;
+    float: left;
+}
+
+.col-75::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+textarea {
+    color: #6d6d6d;
+    width: 237px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #808992;
+}
+
+input[type="text"], input[type="email"] {
+    width: 160px;
+    padding: 3px;
+    border: 1px solid #808992;
 }
 
 .box {
@@ -75,6 +115,11 @@ form {
     height: 140px;
     padding: 18px 22px 15px;
     margin: 0 10px 20px;
+}
+
+.box > p {
+    font-size: 13px;
+    color: #6d6d6d;
 }
 
 h3 {
