@@ -105,13 +105,28 @@
 
                 </div>
                 <div class="main-form">
-
-
+                    <div>
+                        <h3>צור קשר</h3>
+                    </div>
+                    <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם:</p>
+                    <span>* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
+                    <form id="contact-us">
+                        <label for="fname">* שם פרטי</label>
+                        <input id="fname" type="text" name="firstname" placeholder="" required>
+                        <label for="lname">* שם משפחה</label>
+                        <input id="lname" type="text" name="lastname" placeholder="" required>
+                        <label for="pnumber">* טלפון</label>
+                        <input id="pnumber" type="number" name="phonenumber" placeholder="" required>
+                        <label for="email">E-mail *</label>
+                        <input id="email" type="email" name="email" placeholder="" required>
+                        <textarea name="comment" form="contact-us"></textarea>
+                        <input type="submit" value="שלח">
+                    </form>
                 </div>
             </div>
             <div class="main-left">
                 <div class="box">
-                    <div class="header3">
+                    <div class="header">
                         <h3>פרטי יצירת קשר</h3>
                     </div>
                     <p><span>פז חברת נפט בע"מ</span></p>

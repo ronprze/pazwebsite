@@ -40,25 +40,53 @@ a:hover, ul > li > a > span:hover {
     width: 440px;
 }
 
+.box, .main-form {
+    border: 1px solid #dfdfdf;
+    background: #ececec;
+    border-top-right-radius: 25px;
+}
 
+.main-form {
+    width: 346px;
+    height: 331px;
+    padding: 12px 18px;
+    margin: 0 10px 20px;
+}
+
+.main-form > p {
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.main-form > span {
+    color: #72716d;
+    font-size: 12px;
+}
+
+form {
+    width: 245px;
+    height: 220px;
+    margin: 10px auto;
+    display: block;
+}
 
 .box {
     width: 248px;
     height: 142px;
-    border: 1px solid #dfdfdf;
-    background: #ececec;
     padding: 18px 22px 15px;
-    border-top-right-radius: 25px;
     margin: 0 10px 20px;
 }
 
-.box > div > h3 {
+h3 {
     font-size: 15px;
     font-weight: bold;
     color: #005ca0;
 }
 
-.header3 {
+.header {
     width: 248px;
     border-bottom: 1px solid #dfdfdf;
 }
